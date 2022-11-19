@@ -16,9 +16,16 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 
 //home route
 app.get("/", function(req,res){
-   res.render("home", {startingContent: homeStartingContent });
+   res.render("home", {
+    startingContent: homeStartingContent });
 });
 
+
+app.get("/about",function(req, res){
+  res.render("about", {
+    aboutContent: aboutContent
+  });
+});
 
 
 
